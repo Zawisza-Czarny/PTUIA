@@ -52,7 +52,6 @@ namespace Mateusz
             driver.FindElement(By.XPath("//form[@id='formma']/div[4]/div/div/label")).Click();
             driver.FindElement(By.XPath("//form[@id='formma']/div[5]/div/div/label")).Click();
             driver.FindElement(By.XPath("//button[@type='button']")).Click();
-            Assert.AreEqual("Roznica: 420501677385 data 315569260000lata 13.325178675039515", CloseAlertAndGetItsText());
             Assert.AreEqual("Mlodzik", CloseAlertAndGetItsText());
         }
 
@@ -69,7 +68,6 @@ public void The2Test()
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-2007");
     driver.FindElement(By.XPath("//form[@id='formma']/div[4]/div/div/label")).Click();
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 420501708069 data 315569260000lata 13.325179647377567", CloseAlertAndGetItsText());
     Assert.AreEqual("Blad danych", CloseAlertAndGetItsText());
 }
 
@@ -86,7 +84,6 @@ public void The3Test()
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-2007");
     driver.FindElement(By.XPath("//form[@id='formma']/div[5]/div/div/label")).Click();
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 420501735023 data 315569260000lata 13.32518050151653", CloseAlertAndGetItsText());
     Assert.AreEqual("Blad danych", CloseAlertAndGetItsText());
 }
 
@@ -103,7 +100,6 @@ public void The4Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1998");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704498623336 data 315569260000lata 22.324691046776863", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
 }
 [Test]
@@ -120,7 +116,6 @@ public void The5Test()
     driver.FindElement(By.XPath("//form[@id='formma']/div[4]/div/div/label")).Click();
     driver.FindElement(By.XPath("//form[@id='formma']/div[5]/div/div/label")).Click();
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704498752063 data 315569260000lata 22.324695125976465", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
 }
 [Test]
@@ -160,7 +155,6 @@ public void The8Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1998");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704498988272 data 315569260000lata 22.324702611147867", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
 }
 [Test]
@@ -178,7 +172,6 @@ public void The9Test()
     driver.FindElement(By.Id("inputPassword3")).Clear();
     driver.FindElement(By.Id("inputPassword3")).SendKeys("Tomczyk67");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704499066099 data 315569260000lata 22.32470507738935", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
 }
 [Test]
@@ -193,7 +186,6 @@ public void The10Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1998");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704499097517 data 315569260000lata 22.324706072986956", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
     driver.FindElement(By.Id("inputEmail3")).Click();
     driver.FindElement(By.Id("inputEmail3")).Clear();
@@ -203,7 +195,6 @@ public void The10Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1998");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704499118074 data 315569260000lata 22.32470672441289", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
 }
 [Test]
@@ -218,7 +209,6 @@ public void The11Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1998");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 704499189200 data 315569260000lata 22.324708978307964", CloseAlertAndGetItsText());
     Assert.AreEqual("Dorosly", CloseAlertAndGetItsText());
 }
 [Test]
@@ -233,7 +223,6 @@ public void The12Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("AAAA");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: NaN data 315569260000lata NaN", CloseAlertAndGetItsText());
     Assert.AreEqual("Blad danych", CloseAlertAndGetItsText());
 }
 [Test]
@@ -249,7 +238,6 @@ public void The13Test()
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1950");
     driver.FindElement(By.XPath("//form[@id='formma']/div[5]/div/div/label")).Click();
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 2219260458155 data 315569260000lata 70.32562227876694", CloseAlertAndGetItsText());
     Assert.AreEqual("Senior", CloseAlertAndGetItsText());
 }
 [Test]
@@ -265,7 +253,6 @@ public void The14Test()
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-1850");
     driver.FindElement(By.XPath("//form[@id='formma']/div[5]/div/div/label")).Click();
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 5374935538394 data 315569260000lata 170.3250670991845", CloseAlertAndGetItsText());
     Assert.AreEqual("Senior", CloseAlertAndGetItsText());
 }
 [Test]
@@ -282,7 +269,6 @@ public void The15Test()
     driver.FindElement(By.XPath("//form[@id='formma']/div[4]/div/div/label")).Click();
     driver.FindElement(By.XPath("//form[@id='formma']/div[5]/div/div/label")).Click();
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 2219260527824 data 315569260000lata 70.32562448649149", CloseAlertAndGetItsText());
     Assert.AreEqual("Senior", CloseAlertAndGetItsText());
 }
 [Test]
@@ -297,7 +283,6 @@ public void The16Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("1950");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 3816538787115 data 315569260000lata 120.94139927048028", CloseAlertAndGetItsText());
     Assert.AreEqual("Blad danych", CloseAlertAndGetItsText());
 }
 [Test]
@@ -312,7 +297,6 @@ public void The17Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-2018");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: 73347388340 data 315569260000lata 2.3242881242615328", CloseAlertAndGetItsText());
     Assert.AreEqual("Brak kwalifikacji", CloseAlertAndGetItsText());
 }
 [Test]
@@ -327,7 +311,6 @@ public void The18Test()
     driver.FindElement(By.Id("dataU")).Clear();
     driver.FindElement(By.Id("dataU")).SendKeys("01-08-2022");
     driver.FindElement(By.XPath("//button[@type='button']")).Click();
-    Assert.AreEqual("Roznica: -52882988849 data 315569260000lata -1.6757965857954606", CloseAlertAndGetItsText());
     Assert.AreEqual("Brak kwalifikacji", CloseAlertAndGetItsText());
 }
 
